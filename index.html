@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elicon</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/validator@13.1.17"></script>
+  </head>
+  <header class="header">
+    <!-- NAVBAR -->
+    <nav class="nav">
+      <!-- LOGO -->
+      <a class="logo-elicon" id="logo" href="#">
+        <img
+          src="images/Elicon-logo-text.png"
+          alt="Logo firmy"
+          class="logo-company"
+        />
+      </a>
+      <!-- HAMBURGER ICON -->
+      <div class="hamburger-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+      <!-- MENU -->
+      <ul class="nav-list">
+        <li>
+          <a href="#about"><i class="fas fa-info-circle"></i> O NAS</a>
+        </li>
+        <li>
+          <a href="#projects"><i class="fas fa-images"></i> REALIZACJE</a>
+        </li>
+        <li>
+          <a href="#references"><i class="fas fa-star"></i> REFERENCJE</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fas fa-envelope"></i> KONTAKT</a>
+        </li>
+      </ul>
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu">
+        <a href="#about"><i class="fas fa-info-circle"></i> O NAS</a>
+        <a href="#projects"><i class="fas fa-images"></i> REALIZACJE</a>
+        <a href="#references"><i class="fas fa-star"></i> REFERENCJE</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> KONTAKT</a>
+      </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+  </header>
+  <body>
+    <!-- LANDING -->
+    <section class="landing">
+      <div class="landing-container">
+        <div class="landing-content">
+          <div class="landing-img">
+            <img src="/images/landing-img.jpg" alt="" />
+          </div>
+          <div class="banner">
+            <img
+              src="/images/elicon-LogoPodstawowe_siec.png"
+              alt="Logo firmy"
+              class="banner-logo__company"
+            />
+            <div class="banner-content">
+              <p class="banner-subheading">
+                Twoi Partnerzy w Realizacji Wizji Budowlanych
+              </p>
+              <p>Pozostawiamy po sobie dobrze zapamiętaną współpracę.</p>
+              <a href="#about" class="cta-btn">Dowiedz się więcej</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF LANDING -->
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="about-container">
+        <div class="about-us">
+          <h2 class="about-heading">
+            Kompleksowe Usługi Budowlane na Najwyższym Poziomie
+          </h2>
+          <p class="about-paragraph">
+            Nasza firma dysponuje zespołem wysoko wykwalifikowanych inżynierów z
+            niezbędnymi uprawnieniami w różnych dziedzinach budownictwa.
+          </p>
+          <p class="about-paragraph">
+            Nasi specjaliści, posiadający ponad 10-letnie doświadczenie, są
+            ekspertami w takich obszarach jak budownictwo, elektryka, instalacje
+            sanitarne, architektura oraz drogownictwo.
+          </p>
+          <p class="about-paragraph">
+            Dzięki wieloletniej obecności na rynku, skutecznie realizujemy nawet
+            najbardziej wymagające projekty.
+          </p>
+        </div>
+        <div class="about-list">
+          <h2 class="about-heading">OFERUJEMY I GWARANTUJEMY</h2>
+          <ul class="about-list-items">
+            <li>
+              realizacje projektów w ramach zamówień publicznych w zakresie
+              wszystkich branż i instalacji
+            </li>
+            <li>
+              wykonanie robót ziemnych, konstrukcyjnych, budowlanych i
+              instalacyjnych w obiektach użyteczności publicznej i prywatnych
+            </li>
+            <li>roboty wykończeniowe</li>
+            <li>
+              realizacje obiektów specjalistycznych i o skomplikowanych
+              wymaganiach jak szpitale czy pracownie RTG, tomografii
+            </li>
+            <li>nadzory budowlane, doradztwo</li>
+            <li>charakterystyki energetyczne oraz kosztorysy</li>
+            <li>
+              specjalizujemy się w zadaniach w systemie- zaprojektuj i wybuduj
+            </li>
+          </ul>
+        </div>
+        <div class="about-img">
+          <img
+            src="/images/about-image.jpg"
+            alt="About Image"
+            class="about-image"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- END OF ABOUT -->
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h1 class="projects-heading">OSTATNIE PROJEKTY</h1>
+      <div class="cards">
+        <div class="card">
+          <img
+            src="images/cards/kardiologia.jpg"
+            alt="Oddział Kardiologiczny"
+          />
+          <div class="card-content">
+            <h2>Szpital Św. Wojciecha</h2>
+            <p>
+              Oddział Kardiologiczny w Szpitalu św. Wojciecha. ul Jana Pawła II
+              50 Gdańsk
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/cards/kardiologia.jpg"
+            alt="Oddział Kardiologiczny"
+          />
+          <div class="card-content">
+            <h2>Szpital Św. Wojciecha</h2>
+            <p>
+              Oddział Kardiologiczny w Szpitalu św. Wojciecha. ul Jana Pawła II
+              50 Gdańsk
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/cards/ortopedia.jpg"
+            alt=" Oddział Chirurgii Urazowo-Ortopedycznej"
+          />
+          <div class="card-content">
+            <h2>Szpital Wojewódzki</h2>
+            <p>
+              Oddział Chirurgii Urazowo-Ortopedycznej w Szpital im. M.
+              Kopernika. ul. Nowe Ogrody 1-6 Gdańsk
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/cards/rezonans-magnetyczny.jpg"
+            alt="Pracownia Rezonansu Magnetycznego"
+          />
+          <div class="card-content">
+            <h2>Szpital Św. Wojciecha</h2>
+            <p>
+              Pracownia Rezonansu Magnetycznego w Szpitalu św. Wojciecha. ul
+              Jana Pawła II 50 Gdańsk
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/cards/wewnetrzny.jpg"
+            alt="Oddział Chorób Wewnętrznych"
+          />
+          <div class="card-content">
+            <h2>Szpital Wojewódzki</h2>
+            <p>
+              Oddział Chorób Wewnętrznych i Hipertensjologii w Szpital im. M.
+              Kopernika. ul. Nowe Ogrody 1-6 Gdańsk
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF PROJECTS -->
+    <!-- REFERENCES -->
+    <section id="references">
+      <h1>REALIZOWALIŚMY ZADANIA M.IN. DLA</h1>
+      <div class="gallery">
+        <div class="gallery-row">
+          <img
+            src="/images/logos/copernicus-logo2-removebg-preview.png"
+            alt="copernicus"
+            class="logo"
+            data-modal-src="/images/references/referencje-1.jpg"
+          />
+          <img
+            src="/images/logos/logo_spzozmswia-removebg-preview.png"
+            alt="szpital mswia"
+            class="logo custom-size"
+            data-modal-src="/images/references/referencje-2.jpg"
+          />
+          <img
+            src="/images/logos/Znak_SDP_1-removebg-preview.png"
+            alt="Szpital Dziecięcy Polanki"
+            class="logo"
+            data-modal-src="/images/references/referencje-3.jpg"
+          />
+        </div>
+        <div class="gallery-row">
+          <img
+            src="/images/logos/erbud-logo-removebg-preview.png"
+            alt="erbud"
+            class="logo"
+            data-modal-src="/images/references/referencje-4.jpg"
+          />
+          <img
+            src="/images/logos/logowhite22.png"
+            alt="elsolid"
+            class="logo"
+            style="background-color: #13314c"
+            data-modal-src="/images/references/referencje-5.jpg"
+          />
+          <img
+            src="/images/logos/loga-v9-1536x280.png"
+            alt="atlaslift"
+            class="logo"
+            data-modal-src="/images/references/referencje-6.jpg"
+          />
+          <div class="modal-reference">
+            <img class="modal-content" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF REFERENCES -->
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-info">
+        <h2>Skontaktuj się z nami:</h2>
+        <p>Email: biuro@elicon.com</p>
+        <p>Telefon: +48 608 626 220</p>
+      </div>
+      <button class="popup-open">Napisz do nas</button>
+      <!-- POPUP -->
+      <div class="popup-wrapper">
+        <div class="popup">
+          <div class="close-btn"></div>
+          <form id="contactForm" class="popup-form" method="post">
+            <h2 class="popup-form__title">Formularz kontaktowy</h2>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              class="popup-form__input"
+              placeholder="Imię i Nazwisko"
+            />
+            <input
+              id="email"
+              type="email"
+              name="email"
+              class="popup-form__input"
+              placeholder="Adres Email"
+            />
+            <input
+              id="subject"
+              type="text"
+              name="subject"
+              class="popup-form__input"
+              placeholder="Temat"
+            />
+            <textarea
+              id="message"
+              name="message"
+              AC
+              class="popup-form__input"
+            ></textarea>
+
+            <button type="submit" class="popup-form__submit">Wyślij</button>
+          </form>
+        </div>
+      </div>
+      <!-- END OF POPUP  -->
+    </section>
+    <!-- END OF CONTACT -->
+  </body>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <img
+          src="/images/elicon-LogoInwersja_siec.png"
+          alt="Logo firmy"
+          class="footer-logo"
+        />
+      </div>
+
+      <div class="footer-column">
+        <h3>ELICON Sp. z o.o.</h3>
+        <p>Telefon: +48 608 626 220</p>
+        <p>Email: biuro@elicon.com</p>
+      </div>
+
+      <div class="footer-column">
+        <p>NIP: 5833464022</p>
+        <p>REGON: 523677321</p>
+      </div>
+    </div>
+    <p class="footer-copyright">
+      &copy; 2024 Elicon. Wszelkie prawa zastrzeżone.
+    </p>
+  </footer>
+  <!-- END OF FOOTER -->
+</html>

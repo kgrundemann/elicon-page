@@ -1,0 +1,26 @@
+:root {
+  --main-text-color: #2c3e50;
+  --primary-color: #ad1f2e;
+  --secondary-color: #34495e;
+  --background-color: #f9f9f9;
+  --hover-color: #c0392b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-padding-top: 50px;
+}
+
+body.no-scroll {
+  overflow-y: hidden;
+}

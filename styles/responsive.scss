@@ -1,0 +1,83 @@
+/* Max width: 900px */
+@media (max-width: 900px) {
+  html {
+    font-size: 45%;
+  }
+
+  .landing {
+    height: 50vh;
+  }
+
+  #projects {
+    height: 50vh;
+  }
+}
+
+/* Max width: 600px */
+@media (max-width: 600px) {
+  html {
+    font-size: 35%;
+  }
+
+  .landing {
+    height: 30vh;
+  }
+
+  .banner {
+    top: 50%;
+  }
+
+  .banner-logo__company {
+    width: 200px;
+  }
+
+  #projects {
+    height: 40vh;
+  }
+}
+
+/* Max width: 480px */
+@media (max-width: 480px) {
+  html {
+    font-size: 30%;
+  }
+
+  .logo-company {
+    width: 100px;
+  }
+
+  .banner {
+    top: 50%;
+  }
+
+  .banner-content {
+    width: 90%;
+  }
+
+  .cta-btn {
+    margin-top: 1rem;
+  }
+
+  .banner-logo__company {
+    width: 150px;
+  }
+
+  .about {
+    justify-content: center;
+    height: auto;
+    padding: 5rem 2rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  #projects {
+    display: none;
+  }
+}

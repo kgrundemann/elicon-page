@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elicon</title>
     <link rel="stylesheet" href="./styles/style.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -22,47 +21,47 @@
     <script defer src="/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/validator@13.1.17"></script>
   </head>
-  <header class="header">
-    <!-- NAVBAR -->
-    <nav class="nav">
-      <!-- LOGO -->
-      <a class="logo-elicon" id="logo" href="#">
-        <img
-          src="images/Elicon-logo-text.png"
-          alt="Logo firmy"
-          class="logo-company"
-        />
-      </a>
-      <!-- HAMBURGER ICON -->
-      <div class="hamburger-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      <!-- MENU -->
-      <ul class="nav-list">
-        <li>
-          <a href="#about"><i class="fas fa-info-circle"></i> O NAS</a>
-        </li>
-        <li>
-          <a href="#projects"><i class="fas fa-images"></i> REALIZACJE</a>
-        </li>
-        <li>
-          <a href="#references"><i class="fas fa-star"></i> REFERENCJE</a>
-        </li>
-        <li>
-          <a href="#contact"><i class="fas fa-envelope"></i> KONTAKT</a>
-        </li>
-      </ul>
-      <!-- MOBILE MENU -->
-      <div class="mobile-menu">
-        <a href="#about"><i class="fas fa-info-circle"></i> O NAS</a>
-        <a href="#projects"><i class="fas fa-images"></i> REALIZACJE</a>
-        <a href="#references"><i class="fas fa-star"></i> REFERENCJE</a>
-        <a href="#contact"><i class="fas fa-envelope"></i> KONTAKT</a>
-      </div>
-    </nav>
-    <!-- END OF NAVBAR -->
-  </header>
   <body>
+    <header class="header">
+      <!-- NAVBAR -->
+      <nav class="nav">
+        <!-- LOGO -->
+        <a class="logo-elicon" id="logo" href="#">
+          <img
+            src="images/Elicon-logo-text.png"
+            alt="Logo firmy"
+            class="logo-company"
+          />
+        </a>
+        <!-- HAMBURGER ICON -->
+        <div class="hamburger-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+        <!-- MENU -->
+        <ul class="nav-list">
+          <li>
+            <a href="#about"><i class="fas fa-info-circle"></i> O NAS</a>
+          </li>
+          <li>
+            <a href="#projects"><i class="fas fa-images"></i> REALIZACJE</a>
+          </li>
+          <li>
+            <a href="#references"><i class="fas fa-star"></i> REFERENCJE</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fas fa-envelope"></i> KONTAKT</a>
+          </li>
+        </ul>
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu">
+          <a href="#about"><i class="fas fa-info-circle"></i> O NAS</a>
+          <a href="#projects"><i class="fas fa-images"></i> REALIZACJE</a>
+          <a href="#references"><i class="fas fa-star"></i> REFERENCJE</a>
+          <a href="#contact"><i class="fas fa-envelope"></i> KONTAKT</a>
+        </div>
+      </nav>
+      <!-- END OF NAVBAR -->
+    </header>
     <!-- LANDING -->
     <section class="landing">
       <div class="landing-container">
@@ -146,7 +145,10 @@
     <section id="projects">
       <h1 class="projects-heading">OSTATNIE PROJEKTY</h1>
       <div class="cards">
-        <div class="card">
+        <div
+          class="card"
+          data-images='["images/cards/kardiologia1.jpg", "images/cards/kardiologia2.jpg", "images/cards/kardiologia3.jpg"]'
+        >
           <img
             src="images/cards/kardiologia.jpg"
             alt="Oddział Kardiologiczny"
@@ -159,7 +161,10 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div
+          class="card"
+          data-images='["images/cards/kardiologia1.jpg", "images/cards/kardiologia2.jpg", "images/cards/kardiologia3.jpg"]'
+        >
           <img
             src="images/cards/kardiologia.jpg"
             alt="Oddział Kardiologiczny"
@@ -172,10 +177,13 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div
+          class="card"
+          data-images='["images/cards/ortopedia1.jpg", "images/cards/ortopedia2.jpg", "images/cards/ortopedia3.jpg"]'
+        >
           <img
             src="images/cards/ortopedia.jpg"
-            alt=" Oddział Chirurgii Urazowo-Ortopedycznej"
+            alt="Oddział Chirurgii Urazowo-Ortopedycznej"
           />
           <div class="card-content">
             <h2>Szpital Wojewódzki</h2>
@@ -185,7 +193,10 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div
+          class="card"
+          data-images='["images/cards/rezonans1.jpg", "images/cards/rezonans2.jpg", "images/cards/rezonans3.jpg"]'
+        >
           <img
             src="images/cards/rezonans-magnetyczny.jpg"
             alt="Pracownia Rezonansu Magnetycznego"
@@ -198,7 +209,10 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div
+          class="card"
+          data-images='["images/cards/wewnetrzny1.jpg", "images/cards/wewnetrzny2.jpg", "images/cards/wewnetrzny3.jpg"]'
+        >
           <img
             src="images/cards/wewnetrzny.jpg"
             alt="Oddział Chorób Wewnętrznych"
@@ -214,6 +228,14 @@
       </div>
     </section>
     <!-- END OF PROJECTS -->
+
+    <!-- Project Gallery Modal -->
+    <div id="project-gallery-modal" class="modal">
+      <span class="close-gallery">&times;</span>
+      <img class="gallery-image" src="" />
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
     <!-- REFERENCES -->
     <section id="references">
       <h1>REALIZOWALIŚMY ZADANIA M.IN. DLA</h1>
